@@ -4,7 +4,7 @@ const cities = [
     address: "ул. Восстания, 100к1, тер. Химград, д. 240, к. 2",
     phone: "+7 (904) 717-48-00",
     extra: "Опт: +7 (986) 717-04-44",
-    hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–15:00",
+    hours: "Пн–Пт: 8:00–18:00",
     mapLink: "https://yandex.ru/maps/?text=Казань+улица+Восстания+100+Химград",
     mapEmbed: "https://yandex.ru/map-widget/v1/?text=Казань%2C+улица+Восстания%2C+100к1%2C+Химград&z=16&l=map",
   },
@@ -13,7 +13,7 @@ const cities = [
     address: "тер. ГМ Моторист, 37",
     phone: "+7 (967) 871-64-44",
     extra: "",
-    hours: "Пн–Пт: 8:00–18:00, Сб: 9:00–14:00",
+    hours: "Пн–Пт: 8:00–17:00, Сб: 8:00–14:00",
     mapLink: "https://yandex.ru/maps/?text=Альметьевск+территория+ГМ+Моторист+37",
     mapEmbed: "https://yandex.ru/map-widget/v1/?text=Альметьевск%2C+территория+ГМ+Моторист%2C+37&z=16&l=map",
   },
@@ -24,12 +24,8 @@ export default function Cities() {
     <section className="py-16 px-4 bg-[#0d0d0d]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-3">Наши города</h2>
+          <h2 className="text-3xl font-bold text-white mb-3">Наши производства в городах</h2>
           <div className="w-12 h-1 bg-[#FFB800] mx-auto mb-4" />
-          <p className="text-gray-500 max-w-md mx-auto">
-            Два производственных подразделения для быстрого обслуживания
-            клиентов по всему Татарстану
-          </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {cities.map((city) => (

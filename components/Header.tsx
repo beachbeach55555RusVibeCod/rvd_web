@@ -22,7 +22,7 @@ export default function Header() {
               РВД
             </div>
             <div className="leading-tight">
-              <div className="font-bold text-base text-white">ТД ПРОФ РВД</div>
+              <div className="font-bold text-base text-white">ПРОФ РВД ПОСТАВКА</div>
               <div className="text-xs text-gray-400">Рукава высокого давления</div>
             </div>
           </Link>

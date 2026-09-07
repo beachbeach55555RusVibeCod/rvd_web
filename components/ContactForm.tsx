@@ -3,13 +3,12 @@
 import { useState } from "react";
 
 const contacts = [
-  { city: "Казань", phone: "+7 (904) 717-48-00", hours: "Пн–Пт 8:00–18:00, Сб 9:00–15:00" },
-  { city: "Альметьевск", phone: "+7 (967) 871-64-44", hours: "Пн–Пт 8:00–18:00, Сб 9:00–14:00" },
+  { city: "Казань", phone: "+7 (904) 717-48-00", hours: "Пн–Пт 8:00–18:00" },
+  { city: "Альметьевск", phone: "+7 (967) 871-64-44", hours: "Пн–Пт 8:00–17:00, Сб 8:00–14:00" },
 ];
 
 const perks = [
-  { icon: "⚡", text: "Ответим в течение 15 минут" },
-  { icon: "🚗", text: "Выезд к клиенту по Татарстану" },
+  { icon: "⚡", text: "Ответим в течение 5 минут" },
   { icon: "🛡️", text: "Гарантия на все изделия" },
 ];
 
@@ -54,10 +53,6 @@ export default function ContactForm() {
                 Получите расчёт<br />
                 <span className="text-[#FFB800]">бесплатно</span>
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-8">
-                Опишите задачу — подберём рукав, рассчитаем стоимость
-                и организуем доставку или выезд мастера.
-              </p>
               <div className="space-y-3 mb-10">
                 {perks.map((p) => (
                   <div key={p.text} className="flex items-center gap-3">

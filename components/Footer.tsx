@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="bg-[#FFB800] text-black font-bold text-sm px-2 py-0.5 rounded">РВД</div>
-              <span className="text-white font-semibold">ТД ПРОФ РВД</span>
+              <span className="text-white font-semibold">ПРОФ РВД ПОСТАВКА</span>
             </div>
             <p className="text-sm leading-relaxed">
               Производство рукавов высокого давления в Казани и Альметьевске.
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6 text-xs text-center text-gray-700">
-          © {new Date().getFullYear()} ТД ПРОФ РВД ПОСТАВКА. Все права защищены.
+          © {new Date().getFullYear()} ПРОФ РВД ПОСТАВКА. Все права защищены.
         </div>
       </div>
     </footer>
