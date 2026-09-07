@@ -1,7 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-
-const basePath = process.env.GITHUB_PAGES === "true" ? "/rvd_web" : "";
 
 export default function Hero() {
   return (
@@ -30,8 +27,8 @@ export default function Hero() {
       <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#FFB800]/10 blur-3xl" />
 
       {/* Контент */}
-      <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center gap-12">
-        <div className="max-w-3xl min-w-0">
+      <div className="relative max-w-7xl mx-auto">
+        <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-[#FFB800]/10 border border-[#FFB800]/30 text-[#FFB800] text-xs font-bold px-4 py-2 rounded-full mb-8 uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-[#FFB800] animate-pulse" />
             Производство в Казани и Альметьевске
@@ -75,21 +72,6 @@ export default function Hero() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Фото рукавов справа */}
-        <div className="hidden lg:flex relative flex-shrink-0 items-center justify-center mx-auto">
-          <div className="absolute w-72 h-72 bg-[#FFB800]/10 blur-3xl rounded-full" />
-          <div className="relative bg-white rounded-2xl p-5 shadow-2xl shadow-black/50 rotate-2">
-            <Image
-              src={`${basePath}/hero-hoses.jpg`}
-              alt="Рукава высокого давления с фитингами"
-              width={700}
-              height={312}
-              className="rounded-lg w-[320px] h-auto"
-              priority
-            />
           </div>
         </div>
       </div>
