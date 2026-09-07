@@ -1,8 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const basePath = process.env.GITHUB_PAGES === "true" ? "/rvd_web" : "";
 
 export default function Hero() {
   return (
     <section className="relative text-white py-24 px-4 overflow-hidden bg-[#0a0a0a]">
+
+      {/* Фото рукавов - фон справа от диагонали */}
+      <div className="absolute inset-0 hidden lg:block">
+        <Image
+          src={`${basePath}/hero-hoses.jpg`}
+          alt="Рукава высокого давления с фитингами"
+          fill
+          sizes="50vw"
+          className="object-cover object-right"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/85 to-[#0a0a0a]/20" />
+      </div>
 
       {/* Сетка на фоне */}
       <div
