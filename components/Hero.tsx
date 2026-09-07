@@ -7,17 +7,19 @@ export default function Hero() {
   return (
     <section className="relative text-white py-24 px-4 overflow-hidden bg-[#0a0a0a]">
 
-      {/* Фото рукавов - фон справа от диагонали */}
-      <div className="absolute inset-0 hidden lg:block">
-        <Image
-          src={`${basePath}/hero-hoses.jpg`}
-          alt="Рукава высокого давления с фитингами"
-          fill
-          sizes="50vw"
-          className="object-cover object-right"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/85 to-[#0a0a0a]/20" />
+      {/* Фото рукавов - фон справа */}
+      <div className="absolute inset-y-0 right-0 hidden lg:flex items-center">
+        <div className="relative w-[42vw] max-w-[560px] aspect-[700/312]">
+          <Image
+            src={`${basePath}/hero-hoses.jpg`}
+            alt="Рукава высокого давления с фитингами"
+            fill
+            sizes="42vw"
+            className="object-cover object-right"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent" />
+        </div>
       </div>
 
       {/* Жёлтое свечение слева */}
