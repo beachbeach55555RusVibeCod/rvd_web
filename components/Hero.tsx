@@ -41,8 +41,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-gray-400 mb-10 max-w-2xl leading-relaxed">
-            Изготавливаем РВД любой длины и конфигурации. Работаем с давлением
-            до 630 бар. Выезд к клиенту, готовность от 1 часа. Обслуживаем
+            Изготавливаем РВД любой длины и конфигурации. Выезд к клиенту,
+            готовность от 1 часа. Обслуживаем
             Казань, Альметьевск и Республику Татарстан.
           </p>
 
@@ -61,9 +61,8 @@ export default function Hero() {
           <div className="flex flex-wrap gap-8">
             {[
               { value: "10+", label: "лет на рынке" },
-              { value: "630 бар", label: "макс. давление" },
               { value: "от 1 часа", label: "срок изготовления" },
-              { value: "500+", label: "клиентов" },
+              { value: "1000+", label: "клиентов" },
             ].map((s, i) => (
               <div key={s.label} className="flex items-center gap-3">
                 {i > 0 && <div className="w-px h-8 bg-gray-800" />}

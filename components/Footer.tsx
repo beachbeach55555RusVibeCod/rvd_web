@@ -29,11 +29,11 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <span className="text-gray-600">Казань:</span>{" "}
-                <a href="tel:+79678716444" className="hover:text-[#FFB800] transition-colors">+7 (967) 871-64-44</a>
+                <a href="tel:+79047174800" className="hover:text-[#FFB800] transition-colors">+7 (904) 717-48-00</a>
               </li>
               <li>
                 <span className="text-gray-600">Альметьевск:</span>{" "}
-                <a href="tel:+79047174800" className="hover:text-[#FFB800] transition-colors">+7 (904) 717-48-00</a>
+                <a href="tel:+79678716444" className="hover:text-[#FFB800] transition-colors">+7 (967) 871-64-44</a>
               </li>
               <li>
                 <span className="text-gray-600">Опт:</span>{" "}

@@ -40,11 +40,11 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex flex-col items-end text-sm gap-0.5">
-            <a href="tel:+79678716444" className="hover:text-[#FFB800] transition-colors font-semibold text-white">
-              +7 (967) 871-64-44 — Казань
-            </a>
             <a href="tel:+79047174800" className="hover:text-[#FFB800] transition-colors font-semibold text-white">
-              +7 (904) 717-48-00 — Альметьевск
+              +7 (904) 717-48-00 — Казань
+            </a>
+            <a href="tel:+79678716444" className="hover:text-[#FFB800] transition-colors font-semibold text-white">
+              +7 (967) 871-64-44 — Альметьевск
             </a>
           </div>
 
@@ -71,11 +71,11 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <a href="tel:+79678716444" className="block py-2 text-sm font-semibold text-[#FFB800]">
-              +7 (967) 871-64-44
-            </a>
             <a href="tel:+79047174800" className="block py-2 text-sm font-semibold text-[#FFB800]">
               +7 (904) 717-48-00
+            </a>
+            <a href="tel:+79678716444" className="block py-2 text-sm font-semibold text-[#FFB800]">
+              +7 (967) 871-64-44
             </a>
           </div>
         )}
