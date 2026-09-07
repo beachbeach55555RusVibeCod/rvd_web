@@ -3,7 +3,7 @@ import Link from "next/link";
 const categories = [
   {
     title: "Гидравлические РВД",
-    desc: "Рукава для гидравлических систем техники. Давление до 630 бар, диаметры 6–51 мм.",
+    desc: "",
     icon: "🔧",
     href: "/catalog#1sn",
   },
@@ -15,13 +15,13 @@ const categories = [
   },
   {
     title: "Фитинги и муфты",
-    desc: "Обжимные муфты, угловые и прямые переходники, адаптеры BSP/JIC/ORFS.",
+    desc: "Обжимные муфты, фитинги, адаптеры БРФ, краны шаровые, уплотнительные кольца, защита РВД.",
     icon: "🔩",
     href: "/catalog#mufty",
   },
   {
     title: "Изготовление на заказ",
-    desc: "Нестандартные конфигурации, нестандартная длина, срочное изготовление от 1 часа.",
+    desc: "Нестандартные конфигурации, нестандартная длина, срочное изготовление.",
     icon: "🏭",
     href: "#contact",
   },
@@ -49,7 +49,9 @@ export default function CatalogPreview() {
               <h3 className="font-bold text-white mb-2 group-hover:text-[#FFB800] transition-colors">
                 {cat.title}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{cat.desc}</p>
+              {cat.desc && (
+                <p className="text-sm text-gray-500 leading-relaxed">{cat.desc}</p>
+              )}
             </Link>
           ))}
         </div>
