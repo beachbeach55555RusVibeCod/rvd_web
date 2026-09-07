@@ -1,26 +1,27 @@
-import Image from "next/image";
 import Link from "next/link";
-
-const basePath = process.env.GITHUB_PAGES === "true" ? "/rvd_web" : "";
 
 export default function Hero() {
   return (
     <section className="relative text-white py-24 px-4 overflow-hidden bg-[#0a0a0a]">
 
-      {/* Фото рукавов - фон справа */}
-      <div className="absolute inset-y-0 right-0 hidden lg:flex items-center">
-        <div className="relative w-[42vw] max-w-[560px] aspect-[700/312]">
-          <Image
-            src={`${basePath}/hero-hoses.jpg`}
-            alt="Рукава высокого давления с фитингами"
-            fill
-            sizes="42vw"
-            className="object-cover object-right"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent" />
-        </div>
-      </div>
+      {/* Сетка на фоне */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255,184,0,0.3) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,184,0,0.3) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      {/* Диагональная полоса справа */}
+      <div className="absolute top-0 right-0 w-1/2 h-full opacity-5"
+        style={{
+          background: "linear-gradient(135deg, transparent 40%, #FFB800 40%, #FFB800 42%, transparent 42%)",
+        }}
+      />
 
       {/* Жёлтое свечение слева */}
       <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#FFB800]/10 blur-3xl" />
